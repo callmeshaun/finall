@@ -1,0 +1,163 @@
+
+.Bg-image{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+
+}
+
+
+.container{
+  max-width: 300px;
+  gap: 10px;
+  padding: 30px;
+  border-radius: 20px;
+  position:fixed;
+  background: transparent;
+  left: 60%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,.title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: white;
+}
+
+.title::before {
+  width: 18px;
+  height: 18px;
+  background-color: rgb(233, 139, 217);
+}
+
+.title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+.message, .signin {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+}
+
+
+
+.signin a {
+  color: rgb(255, 203, 240);
+}
+
+.signin a:hover {
+  text-decoration: underline rgb(225, 65, 206);
+}
+
+
+  
+.form-group {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+
+}
+
+.form label {
+  position: absolute;
+}
+
+.form label .form-control {
+  
+  border:2px solid pink;
+  width: 16em;
+  height: 3.5em;
+  padding-left: 0.8em;
+  outline-color: pink;
+  overflow: hidden;
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+.input:hover,
+.input:focus {
+  border: 2px solid #e032a6;
+  box-shadow: 0px 0px 0px 7px rgba(228, 74, 236, 0.2);
+  background-color: white;
+}
+
+.form label .form-control  {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: rgb(255, 255, 255);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .form-control:placeholder-shown  {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form label .form-control:focus ,.form label .form-control:valid  {
+  top: 5px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .form-control:valid  {
+  color: pink;
+}
+
+.form-btn  {
+  border: none;
+  outline: none;
+  background-color: rgb(233, 54, 147);
+  padding: 5px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+  width: 100px;
+}
+
+.form-btn :hover {
+  background-color: rgb(255, 81, 171);
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
